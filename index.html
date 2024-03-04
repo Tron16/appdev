@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Example Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form action="./thankyou.html" method="GET">
+    <h1>Class selection form</h1>
+
+    
+    <div id="radiobuttons">
+      <p>Choose a math class </p>
+      <label for="algebra">Algebra I</label>
+      <input type="radio" id="algebra" value="algebra" name="select" required>
+
+      <label for="algebra2">Algebra II</label>
+      <input type="radio" id="algebra2" value="algebra2" name="select">
+
+      <label for="precalc">Pre-Calculus</label>
+      <input type="radio" id="precalc" value="precalc" name="select">
+    </div>
+    <br>
+
+    <!--Buttons for the science classes-->
+    <div id="checklist">
+      <p>Choose a science class. You may select multiple</p>
+      <label for="enviro">Enviornmental Science</label>
+      <input type="checkbox" id="enviro" value="enviro" name="checklist">
+      
+      <label for="physics">Physics I</label>
+      <input type="checkbox" id="physics" value="physics" name="checklist">
+
+      <label for="bio">Biology</label>
+      <input type="checkbox" id="bio" value="bio" name="checklist">
+    </div>
+    <br><br>
+
+    <label for="elective1">Elective Option 1</label>
+    <input type="text" name="elective1" id="elective1">
+    <br><br>
+
+    <label for="second">Elective Option 2</label>
+    <input type="text" name="elective2" id="elective2">
+    <br><br>
+
+    <label for="third">Difficulty(1-10)</label>
+    <input type="range" name="third-input" id="third" min="1" max="10">
+    <br><br>
+
+    
+
+    
+
+    
+
+    <label for="longanswer">Any additional requests:</label>
+    <br>
+    <textarea id="longanswer" name="longanswer" rows="5" cols="30" minlength="5" required></textarea>
+    <br><br>
+
+    <input type="submit">
+
+
+  </form>
+
+</body>
+
+</html>
